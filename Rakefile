@@ -39,6 +39,7 @@ namespace :gem do
   end
 end
 
+desc "Install the gem"
 task :install => :package do
   sh %{sudo gem install pkg/injour-#{Injour::VERSION}}
 end
